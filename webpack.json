@@ -1,0 +1,9 @@
+{
+  "root": "src",
+  "devServer": {
+    "host": "localhost"
+  },
+  "sass": {
+    "includePaths": ["./node_modules"]
+  }
+}
