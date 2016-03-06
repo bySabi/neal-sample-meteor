@@ -3,6 +3,19 @@
 This is a sample page for [neal-react](http://www.github.com/dennybritz/neal-react), reactjs components for building landing pages.
 This project is a port of [neal-sample](https://github.com/dennybritz/neal-sample) to `meteor 1.3` and [meteor-webpack](https://github.com/thereactivestack/meteor-webpack).
 
+## Used packages
+
+* Meteor 1.3
+* [meteor-webpack](https://github.com/thereactivestack/meteor-webpack)
+* React 0.14
+* [neal-react](https://github.com/bySabi/neal-sample-meteor/edit/master/README.md) - Startup Landing Page Components for React
+* Bootstrap 4
+* Font Awesome
+* [react-helmet](https://github.com/nfl/react-helmet) - A document head manager for React
+* [react-mounter](https://github.com/kadirahq/react-mounter) - A simple way to mount React components
+* react-router
+
+
 ## Develop locally
 
 ```bash
@@ -43,7 +56,9 @@ You need to do those 3 steps to make it works with iOS or Android:
 1. Replace localhost by your local ip address in `webpack.json`.
 
 
-## If you have the `libsass` binding Error:  https://github.com/thereactivestack/meteor-webpack/issues/17
+
+
+### If you have the `libsass` binding Error [#17](https://github.com/thereactivestack/meteor-webpack/issues/17)
 
 `OSX`
 * Install [nvm](http://dev.topheman.com/install-nvm-with-homebrew-to-use-multiple-versions-of-node-and-iojs-easily/)
@@ -64,6 +79,6 @@ nvm use system
 ```
 
 
-## License
+# License
 
 MIT
