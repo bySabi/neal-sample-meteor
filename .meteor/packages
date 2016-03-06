@@ -26,6 +26,4 @@ webpack:sass
 
 blaze-html-templates
 
-coursierprive:tether
-twbs:bootstrap@=4.0.0-alpha2
-fortawesome:fontawesome
+orgztion:meteor-global-tether

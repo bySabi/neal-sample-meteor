@@ -1,5 +1,9 @@
 import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
+
+import 'font-awesome/scss/font-awesome.scss';
+import 'bootstrap';
+
 import 'neal-react/css/base.scss';
 import App from './ui/App';
 
