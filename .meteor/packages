@@ -12,11 +12,6 @@ tracker                 # Meteor's client-side reactive programming library
 
 standard-minifier-css   # CSS minifier run for production mode
 standard-minifier-js    # JS minifier run for production mode
-es5-shim                # ECMAScript 5 compatibility for older browsers.
-
-react-runtime
-react-meteor-data
-thereactivestack:blazetoreact
 
 webpack:webpack
 webpack:react
@@ -24,6 +19,4 @@ webpack:css
 webpack:assets
 webpack:sass
 
-blaze-html-templates
-
-orgztion:meteor-global-tether
+globals
