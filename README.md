@@ -41,3 +41,29 @@ You need to do those 3 steps to make it works with iOS or Android:
     ```
 
 1. Replace localhost by your local ip address in `webpack.json`.
+
+
+## If you have the `libsass` binding Error:  https://github.com/thereactivestack/meteor-webpack/issues/17
+
+`OSX`
+* Install [nvm](http://dev.topheman.com/install-nvm-with-homebrew-to-use-multiple-versions-of-node-and-iojs-easily/)
+* install node 0.10 with `nvm`
+```
+cd neal-sample-meteor
+nvm install 0.10
+```
+* check installed node versions `nvm ls`
+* rebuild `node-sass` with same meteor node binary, `0.10`
+```
+nvm use 0.10
+npm rebuild node-sass
+```
+* back to `system` node `5.X` version with `npm 3`
+```
+nvm use system
+```
+
+
+## License
+
+MIT
