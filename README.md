@@ -3,6 +3,11 @@
 This is a sample page for [neal-react](http://www.github.com/dennybritz/neal-react), reactjs components for building landing pages.
 This project is a port of [neal-sample](https://github.com/dennybritz/neal-sample) to `meteor 1.3` and [meteor-webpack](https://github.com/thereactivestack/meteor-webpack).
 
+## Visit the Sample Page
+
+- [Hosted original Sample Page](http://www.nealjs.com)
+
+
 ## Used packages
 
 * Meteor 1.3
