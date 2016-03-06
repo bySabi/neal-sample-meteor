@@ -13,7 +13,7 @@ This project is a port of [neal-sample](https://github.com/dennybritz/neal-sampl
 * Meteor 1.3
 * [meteor-webpack](https://github.com/thereactivestack/meteor-webpack)
 * React 0.14
-* [neal-react](https://github.com/bySabi/neal-sample-meteor/edit/master/README.md) - Startup Landing Page Components for React
+* [neal-react](https://github.com/dennybritz/neal-react) - Startup Landing Page Components for React
 * Bootstrap 4
 * Font Awesome
 * [react-helmet](https://github.com/nfl/react-helmet) - A document head manager for React
