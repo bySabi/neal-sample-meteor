@@ -46,7 +46,6 @@ mongo-id@1.0.1
 npm-mongo@1.4.40-beta.12
 observe-sequence@1.0.8-beta.12
 ordered-dict@1.0.4
-orgztion:meteor-global-tether@1.0.0
 promise@0.5.2-beta.12
 random@1.0.6-beta.12
 reactive-var@1.0.6
