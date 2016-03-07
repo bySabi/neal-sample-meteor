@@ -12,8 +12,6 @@ standard-minifier-js    # JS minifier run for production mode
 
 webpack:webpack
 webpack:react
-webpack:css
-webpack:assets
 webpack:sass
 
 globals
