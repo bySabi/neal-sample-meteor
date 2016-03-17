@@ -1,6 +1,6 @@
 import React from "react";
 import SamplePage from "./sample-page.jsx";
-import { Router, IndexRoute, Route, Link, Redirect, browserHistory } from "react-router";
+import { Router, IndexRoute, Route, browserHistory } from "react-router";
 import { App as NealApp } from "neal-react";
 
 class SampleApp extends React.Component {

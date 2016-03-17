@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "react-router";
+import { HashLink } from "react-router-hash-scroll";
 import {
   Code,
   CustomerQuote, CustomerQuotes,
@@ -16,7 +17,7 @@ import {
   SignupInline, SignupModal,
   Stripe,
   Team,
-  TeamMember,
+  TeamMember
 } from "neal-react";
 
 const Head = () => (
@@ -98,18 +99,111 @@ const sampleCode = `<Page>
 </Page>
 `;
 
+export const SampleCode = () => (
+  <Section id="sample-code" className="nopad-bottom">
+    <Code lang="jsx" block>{sampleCode}</Code>
+  </Section>
+);
+
+const Features = () => (
+  <Section id="features">
+    <HorizontalSplit padding="md">
+      <div>
+        <p className="lead">Batteries Included</p>
+        <p>Neal is based on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> and ships with navbar, hero, footer, sections, horizontal split, pricing tables, customer quotes and other components you need for a landing page. No more repetitive coding! Oh, and it's easy to extend.</p>
+      </div>
+      <div>
+        <p className="lead">Third-Party Integrations</p>
+        <p>External integrations like &nbsp;
+          <a href="http://www.google.com/analytics/">Google Analytics</a>,&nbsp;
+          <a href="https://segment.com/">Segment</a>,&nbsp;
+          <a href="https://stripe.com/">Stripe</a> and&nbsp;
+          <a href="http://typeform.com">Typeform</a> are included.
+          No more copying & pasting integration code, all you need is your API keys. We automatically track events when visitors navigate to different parts of your page.</p>
+      </div>
+      <div>
+        <p className="lead">Serverless Deployment</p>
+        <p>Because you are relying on react.js and third-party integration you don't need a server to host your landing page. Simply upload it to an Amazon S3 bucket, enable website hosting, and it's ready to go!</p>
+      </div>
+    </HorizontalSplit>
+  </Section>
+);
+
+const SignUp = () => (
+  <Section id="signup" heading="Inline and Modal Signup components" className="gray">
+    <p>Use these components to capture user data, display a payment dialog and/or send them to your own backend for handling. Of course, you could also just use a Typeform to collect user emails. </p>
+    <SignupInline onSubmit={onSignup}/>
+    <SignupModal modalId="signup-modal" onSubmit={onSignup}/>
+    <p>
+      <a className="btn btn-primary btn-ghost" data-toggle="modal" data-target="#signup-modal">Show Signup modal</a>
+    </p>
+  </Section>
+);
+
+const Pricing = () => (
+  <Section id="pricing">
+    <PricingTable>
+      <PricingPlan {... pricingPlan1} />
+      <PricingPlan {... pricingPlan2} />
+      <PricingPlan {... pricingPlan3} />
+    </PricingTable>
+  </Section>
+);
+
+const Testimonials = () => (
+  <Section id="testimonials">
+    <CustomerQuotes>
+      <CustomerQuote name="Paul Graham" title="YC" imageUrl="img/people/paulgraham.jpg">
+        <p>What I tell founders is not to sweat the business model too much at first. The most important task at first is to build something people want. If you don't do that, it won't matter how clever your business model is.</p>
+      </CustomerQuote>
+      <CustomerQuote name="Elon Musk" imageUrl="img/people/elonmusk.jpg">
+        <p>I came to the conclusion that we should aspire to increase the scope and scale of human consciousness in order to better understand what questions to ask. Really, the only thing that makes sense is to strive for greater collective enlightenment.</p>
+      </CustomerQuote>
+      <CustomerQuote name="Reid Hoffman" title="Linkedin" imageUrl="img/people/reidhoffman.jpg">
+        <p>If you are not embarrassed by the first version of your product, you've launched too late.</p>
+      </CustomerQuote>
+    </CustomerQuotes>
+  </Section>
+);
+
+const AboutUs = () => (
+  <Section id="aboutus">
+    <Team>
+      <TeamMember name="Member 1" title="Co-founder" imageUrl="img/people/grumpycat.jpg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </TeamMember>
+      <TeamMember name="Member 2" title="Co-founder" imageUrl="img/people/boo.jpg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </TeamMember>
+      <TeamMember name="Member 3" title="Co-founder" imageUrl="img/people/panda.jpg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </TeamMember>
+    </Team>
+  </Section>
+);
+
 export default (props) => (
   <Page>
+    
     <Head />
-    <Navbar brand={brand}>
-      <NavItem><Link to="Home" className="nav-link">Home</Link></NavItem>
+    
+    <div id="home" />
+    
+    <Navbar brand={brand} className="navbar-fixed-top">
+      <NavItem><HashLink to="#home" className="nav-link">Home</HashLink></NavItem>
+      <NavItem><HashLink to="#sample-code" className="nav-link">Sample</HashLink></NavItem>
+      <NavItem><HashLink to="#features" className="nav-link">Features</HashLink></NavItem>
+      <NavItem><HashLink to="#signup" className="nav-link">SignUp</HashLink></NavItem>
+      <NavItem><HashLink to="#pricing" className="nav-link">Pricing</HashLink></NavItem>
+      <NavItem><HashLink to="#testimonials" className="nav-link">Testimonials</HashLink></NavItem>
+      <NavItem><HashLink to="#aboutus" className="nav-link">About US</HashLink></NavItem>
       <NavItem dropdown={true}>
         <DropdownToggle>Github</DropdownToggle>
         <DropdownMenu>
           <a href="https://github.com/dennybritz/neal-react" className="dropdown-item" target="_blank">
             Neal React
           </a>
-          <a href="https://github.com/bySabi/neal-sample-meteor" className="dropdown-item" target="_blank">
+          <a href="https://github.com/dennybritz/neal-sample" className="dropdown-item" target="_blank">
             Sample Page
           </a>
         </DropdownMenu>
@@ -137,77 +231,18 @@ export default (props) => (
       </ImageList>
     </Section>
 
-    <Section className="nopad-bottom">
-      <Code lang="jsx" block>{sampleCode}</Code>
-    </Section>
-
-    <Section>
-      <HorizontalSplit padding="md">
-        <div>
-          <p className="lead">Batteries Included</p>
-          <p>Neal is based on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> and ships with navbar, hero, footer, sections, horizontal split, pricing tables, customer quotes and other components you need for a landing page. No more repetitive coding! Oh, and it's easy to extend.</p>
-        </div>
-        <div>
-          <p className="lead">Third-Party Integrations</p>
-          <p>External integrations like &nbsp;
-            <a href="http://www.google.com/analytics/">Google Analytics</a>,&nbsp;
-            <a href="https://segment.com/">Segment</a>,&nbsp;
-            <a href="https://stripe.com/">Stripe</a> and&nbsp;
-            <a href="http://typeform.com">Typeform</a> are included.
-            No more copying & pasting integration code, all you need is your API keys. We automatically track events when visitors navigate to different parts of your page.</p>
-        </div>
-        <div>
-          <p className="lead">Serverless Deployment</p>
-          <p>Because you are relying on react.js and third-party integration you don't need a server to host your landing page. Simply upload it to an Amazon S3 bucket, enable website hosting, and it's ready to go!</p>
-        </div>
-      </HorizontalSplit>
-    </Section>
-
-    <Section heading="Inline and Modal Signup components" className="gray">
-      <p>Use these components to capture user data, display a payment dialog and/or send them to your own backend for handling. Of course, you could also just use a Typeform to collect user emails. </p>
-      <SignupInline onSubmit={onSignup}/>
-      <SignupModal modalId="signup-modal" onSubmit={onSignup}/>
-      <p>
-        <a className="btn btn-primary btn-ghost" data-toggle="modal" data-target="#signup-modal">Show Signup modal</a>
-      </p>
-    </Section>
-
-    <Section>
-      <PricingTable>
-        <PricingPlan {... pricingPlan1} />
-        <PricingPlan {... pricingPlan2} />
-        <PricingPlan {... pricingPlan3} />
-      </PricingTable>
-    </Section>
-
-    <Section>
-      <CustomerQuotes>
-        <CustomerQuote name="Paul Graham" title="YC" imageUrl="img/people/paulgraham.jpg">
-          <p>What I tell founders is not to sweat the business model too much at first. The most important task at first is to build something people want. If you don't do that, it won't matter how clever your business model is.</p>
-        </CustomerQuote>
-        <CustomerQuote name="Elon Musk" imageUrl="img/people/elonmusk.jpg">
-          <p>I came to the conclusion that we should aspire to increase the scope and scale of human consciousness in order to better understand what questions to ask. Really, the only thing that makes sense is to strive for greater collective enlightenment.</p>
-        </CustomerQuote>
-        <CustomerQuote name="Reid Hoffman" title="Linkedin" imageUrl="img/people/reidhoffman.jpg">
-          <p>If you are not embarrassed by the first version of your product, you've launched too late.</p>
-        </CustomerQuote>
-      </CustomerQuotes>
-    </Section>
-
-    <Section>
-      <Team>
-        <TeamMember name="Member 1" title="Co-founder" imageUrl="img/people/grumpycat.jpg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </TeamMember>
-        <TeamMember name="Member 2" title="Co-founder" imageUrl="img/people/boo.jpg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </TeamMember>
-        <TeamMember name="Member 3" title="Co-founder" imageUrl="img/people/panda.jpg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </TeamMember>
-      </Team>
-    </Section>
-
+    <SampleCode />
+    
+    <Features />
+    
+    <SignUp />
+    
+    <Pricing />
+    
+    <Testimonials />
+    
+    <AboutUs />
+    
     <Footer brandName={brandName}
       facebookUrl="http://www.facebook.com"
       twitterUrl="http://www.twitter.com/dennybritz"
@@ -216,4 +251,3 @@ export default (props) => (
     </Footer>
   </Page>
 );
-
