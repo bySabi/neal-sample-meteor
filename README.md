@@ -23,17 +23,20 @@ This project is a port of [neal-sample](https://github.com/dennybritz/neal-sampl
 ## How customize some dependencies
 
 * Back to `React 0.14.x`
+
  ```
     $ npm remove react react-dom
     $ npm install react react-dom --save
  ```
 * Back to builtin meteor `jQuery 1.11.2`
+
  ```
     $ npm remove jquery
     $ rm -fr packages/meteor-jquery--module
     $ meteor
  ```
 * Reinstall previous removed `jQuery 2.1.x`
+
  [meteor-jquery--module](https://github.com/orgztion/meteor-jquery--module)
 
 ## Develop locally
