@@ -109,7 +109,7 @@ export default (props) => (
           <a href="https://github.com/dennybritz/neal-react" className="dropdown-item" target="_blank">
             Neal React
           </a>
-          <a href="https://github.com/dennybritz/neal-sample" className="dropdown-item" target="_blank">
+          <a href="https://github.com/bySabi/neal-sample-meteor" className="dropdown-item" target="_blank">
             Sample Page
           </a>
         </DropdownMenu>

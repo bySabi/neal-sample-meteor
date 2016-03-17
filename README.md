@@ -12,7 +12,7 @@ This project is a port of [neal-sample](https://github.com/dennybritz/neal-sampl
 
 * Meteor 1.3
 * [meteor-webpack](https://github.com/thereactivestack/meteor-webpack)
-* React 0.14
+* React 15
 * [neal-react](https://github.com/dennybritz/neal-react) - Startup Landing Page Components for React
 * Bootstrap 4
 * Font Awesome
@@ -20,6 +20,21 @@ This project is a port of [neal-sample](https://github.com/dennybritz/neal-sampl
 * [react-mounter](https://github.com/kadirahq/react-mounter) - A simple way to mount React components
 * react-router
 
+## How customize some dependencies
+
+* Back to `React 0.14.x`
+ ```
+    $ npm remove react react-dom
+    $ npm install react react-dom --save
+ ```
+* Back to builtin meteor `jQuery 1.11.2`
+ ```
+    $ npm remove jquery
+    $ rm -fr packages/meteor-jquery--module
+    $ meteor
+ ```
+* Reinstall previous removed `jQuery 2.1.x`
+ [meteor-jquery--module](https://github.com/orgztion/meteor-jquery--module)
 
 ## Develop locally
 

@@ -16,4 +16,4 @@ webpack:react
 webpack:css
 webpack:sass
 
-globals
+workarounds             # local package: Meteor only workarounds

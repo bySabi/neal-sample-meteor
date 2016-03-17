@@ -6,17 +6,17 @@
   "main": "src/server.js",
   "browser": "src/client.js",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.2",
-    "font-awesome": "^4.5.0",
+    "bootstrap": ">4.0.0-alpha.0",
+    "font-awesome": "4.x.x",
     "jquery": "^2.2.1",
     "neal-react": "^0.2.3",
-    "react": "~0.14.1",
-    "react-dom": "^0.14.7",
-    "react-helmet": "^2.3.1",
-    "react-mixin": "^3.0.3",
-    "react-mounter": "^1.1.0",
-    "react-router": "^2.0.0",
-    "tether": "^1.2.0"
+    "react": ">15.0.0-rc.0",
+    "react-dom": ">15.0.0-rc.0",
+    "react-helmet": "2.x.x",
+    "react-mixin": "3.x.x",
+    "react-mounter": "1.x.0",
+    "react-router": "2.x.x",
+    "react-router-hash-scroll": "^0.1.0"
   },
   "devDependencies": {
     "webpack": "^1.12.9",
@@ -39,6 +39,7 @@
     "react-transform-catch-errors": "^1.0.0",
     "redbox-react": "^1.2.0",
     "sass-loader": "^3.1.2",
-    "node-sass": "^3.4.2"
+    "node-sass": "^3.4.2",
+    "expose-loader": "^0.7.1"
   }
 }
