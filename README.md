@@ -31,7 +31,7 @@ This project is a port of [neal-sample](https://github.com/dennybritz/neal-sampl
 * Back to builtin meteor `jQuery 1.11.2`
 
  ```
-    $ npm remove jquery
+    $ npm remove jquery --save
     $ rm -fr packages/meteor-jquery--module
     $ meteor
  ```
