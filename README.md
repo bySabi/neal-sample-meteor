@@ -96,7 +96,7 @@ nvm install 0.10
 nvm use 0.10
 npm rebuild node-sass
 ```
-* back to `system` node `5.X` version with `npm 3`
+* back to 'system', `node 5.x` and `npm 3.x`
 ```
 nvm use system
 ```
