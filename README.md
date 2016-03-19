@@ -35,7 +35,7 @@ This project is a port of [neal-sample](https://github.com/dennybritz/neal-sampl
     $ rm -fr packages/meteor-jquery--module
     $ meteor
  ```
-* Reinstall previous removed `jQuery 2.x.x`
+* Reinstall previously removed `jQuery 2.x.x`
 
  [meteor-jquery--module](https://github.com/orgztion/meteor-jquery--module)
 
