@@ -1,7 +1,12 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "react-router";
-import { HashLink } from "react-router-hash-scroll";
+
+import Testing from './waypoint.jsx';
+ 
+import { HashLinkHistory as HashLink } from "react-router-hash-scroll";
+///import { HashLink } from "react-router-hash-scroll";
+ 
 import {
   Code,
   CustomerQuote, CustomerQuotes,
@@ -139,7 +144,7 @@ const SignUp = () => (
     </p>
   </Section>
 );
-
+//
 const Pricing = () => (
   <Section id="pricing">
     <PricingTable>
@@ -181,13 +186,15 @@ const AboutUs = () => (
     </Team>
   </Section>
 );
-
+ 
 export default (props) => (
   <Page>
     
     <Head />
     
     <div id="home" />
+    
+    <Testing />
     
     <Navbar brand={brand} className="navbar-fixed-top">
       <NavItem><HashLink to="#home" className="nav-link">Home</HashLink></NavItem>
