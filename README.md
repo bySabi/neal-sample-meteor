@@ -82,7 +82,7 @@ You need to do those 3 steps to make it works with iOS or Android:
 
 
 
-### If you have the `libsass` binding Error [#17](https://github.com/thereactivestack/meteor-webpack/issues/17)
+# If you have the `libsass` binding Error [#17](https://github.com/thereactivestack/meteor-webpack/issues/17)
 
 `OSX`
 * Install [nvm](http://dev.topheman.com/install-nvm-with-homebrew-to-use-multiple-versions-of-node-and-iojs-easily/)
