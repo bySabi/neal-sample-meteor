@@ -1,11 +1,11 @@
 import React from "react";
-import Helmet from "react-helmet";
+//import Helmet from "react-helmet";
 import { Link } from "react-router";
 
-import Testing from './waypoint.jsx';
+//import Testing from './waypoint.jsx';
  
-import { HashLinkHistory as HashLink } from "react-router-hash-scroll";
-///import { HashLink } from "react-router-hash-scroll";
+//import { HashLinkHistory as HashLink } from "react-router-hash-scroll";
+import { HashLink } from "react-router-hash-scroll";
  
 import {
   Code,
@@ -25,11 +25,14 @@ import {
   TeamMember
 } from "neal-react";
 
+/*
 const Head = () => (
   <Helmet
     title="neal-react - Declarative landing pages for React"
   />
 );
+*/
+const Head = () => (null);
 
 const brandName = "SamplePage";
 const brand = <span>{brandName}</span>;
@@ -193,8 +196,6 @@ export default (props) => (
     <Head />
     
     <div id="home" />
-    
-    <Testing />
     
     <Navbar brand={brand} className="navbar-fixed-top">
       <NavItem><HashLink to="#home" className="nav-link">Home</HashLink></NavItem>
