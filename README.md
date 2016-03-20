@@ -1,11 +1,11 @@
-# neal-React Sample Page
+# neal-react Sample Page
 
 This is a sample page for [neal-react](http://www.github.com/dennybritz/neal-react), reactjs components for building landing pages.
 This project is a port of [neal-sample](https://github.com/dennybritz/neal-sample) to `meteor 1.3` and [meteor-webpack](https://github.com/thereactivestack/meteor-webpack).
 
 ## Visit the Sample Page
 
-- [Hosted original Sample Page](http://www.nealjs.com)
+- [Hosted Sample Page](https://http://bysabi.github.io/neal-sample-meteor/)
 
 
 ## Used packages
@@ -19,6 +19,7 @@ This project is a port of [neal-sample](https://github.com/dennybritz/neal-sampl
 * [react-helmet](https://github.com/nfl/react-helmet) - A document head manager for React
 * [react-mounter](https://github.com/kadirahq/react-mounter) - A simple way to mount React components
 * react-router
+* [react-router-hash-scroll](https://github.com/bySabi/react-router-hash-scroll) - A `#hash` link animate scroll navigation
 
 ## How customize some dependencies
 
