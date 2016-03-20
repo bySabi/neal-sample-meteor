@@ -3,7 +3,7 @@ Package.describe({
   summary: "Manipulate the DOM using CSS selectors",
   git: "https://github.com/orgztion/meteor-jquery--module",
   // This package replace meteor jQuery 1.11.2 with any version from node_modules
-  version: '1.11.6-rc.3'
+  version: '1.11.6-rc.4'
 });
 
 Package.onUse(function (api) {
