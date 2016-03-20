@@ -5,7 +5,7 @@ This project is a port of [neal-sample](https://github.com/dennybritz/neal-sampl
 
 ## Visit the Sample Page
 
-- [Hosted Sample Page](https://http://bysabi.github.io/neal-sample-meteor/)
+- [Hosted Sample Page](https://bysabi.github.io/neal-sample-meteor/)
 
 
 ## Used packages
