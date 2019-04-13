@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": ">4.0.0-alpha.0",
     "font-awesome": "4.x.x",
-    "jquery": "^2.2.1",
+    "jquery": "^3.4.0",
     "neal-react": "git+https://github.com/bySabi/neal-react.git#master",
     "react": ">15.0.0-rc.0",
     "react-dom": ">15.0.0-rc.0",
